@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Classificação</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <h1>Tabela de classificação</h1>
+
+    <div class="form-group">
+        <div>
+            <input id="input-name" placeholder="Adicionar novo jogador">
+            <button id="newPlayer-btn" class="input-btn" type="submit" onclick="addNewPlayer()">Adicionar</button>
+        </div>
+        <button id="reset-button" id="reset-button" class="reset-btn" type="submit" onclick="resetScores()">Zerar tabela</button>
+    </div>
+
+    <div class="reset-container">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+                <th colspan="3">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="playersTable">
+            <!--       <tr>
+          <td>Paulo</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button onClick="addVictory()">Vitória</button></td>
+          <td><button onClick="addDraw()">Empate</button></td>
+          <td><button onClick="addDefeat()">Derrota</button></td>
+        </tr>
+        <tr>
+          <td>Rafa</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button onClick="addVictory()">Vitória</button></td>
+          <td><button onClick="addDraw()">Empate</button></td>
+          <td><button onClick="addDefeat()">Derrota</button></td>
+        </tr>
+      </tbody> -->
+    </table>
+
+    <div id="winner" class="winner-content"></div>
+    <script type="text/javascript" src="./scripts.js"></script>
+</body>
+
+</html>
